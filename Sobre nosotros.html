@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sobre nosotros - PsicoMelga</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#d9e6da",
+                    "surface-dim": "#d8dadc",
+                    "on-primary-fixed": "#091d2e",
+                    "secondary": "#526069",
+                    "surface-tint": "#4e6073",
+                    "inverse-on-surface": "#eff1f3",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#131e17",
+                    "tertiary-fixed-dim": "#bdcabe",
+                    "on-surface": "#191c1e",
+                    "surface-container-highest": "#e0e3e5",
+                    "secondary-fixed": "#d6e5ef",
+                    "on-tertiary-fixed-variant": "#3e4a41",
+                    "surface-container-high": "#e6e8ea",
+                    "secondary-container": "#d3e2ed",
+                    "on-background": "#191c1e",
+                    "on-tertiary-container": "#9eaaa0",
+                    "on-secondary-fixed-variant": "#3b4951",
+                    "on-secondary-container": "#56656e",
+                    "background": "#f7f9fb",
+                    "primary-fixed-dim": "#b5c8df",
+                    "primary-fixed": "#d1e4fb",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "primary": "#162839",
+                    "surface": "#f7f9fb",
+                    "on-secondary-fixed": "#0f1d25",
+                    "on-surface-variant": "#43474c",
+                    "inverse-surface": "#2d3133",
+                    "surface-variant": "#e0e3e5",
+                    "outline-variant": "#c4c6cd",
+                    "tertiary-container": "#343f37",
+                    "on-error": "#ffffff",
+                    "primary-container": "#2c3e50",
+                    "tertiary": "#1e2922",
+                    "surface-container-low": "#f2f4f6",
+                    "on-primary-fixed-variant": "#36485b",
+                    "secondary-fixed-dim": "#bac9d3",
+                    "surface-container": "#eceef0",
+                    "on-primary-container": "#96a9be",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#b5c8df",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#f7f9fb",
+                    "outline": "#74777d",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "120px",
+                    "lg": "48px",
+                    "xs": "4px",
+                    "gutter": "24px",
+                    "sm": "12px",
+                    "md": "24px",
+                    "base": "8px",
+                    "margin-mobile": "20px",
+                    "xl": "80px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "display": ["Montserrat"],
+                    "caption": ["Inter"],
+                    "headline-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .tonal-elevation-1 {
+            background-color: #ffffff;
+            box-shadow: 0px 4px 20px rgba(9, 29, 46, 0.04);
+        }
+        .backdrop-blur-custom {
+            backdrop-filter: blur(10px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface/80 backdrop-blur-md transition-all duration-300">
+<div class="flex items-center gap-base">
+<span class="material-symbols-outlined text-primary text-headline-md" data-icon="psychology">psychology</span>
+<span class="font-headline-md text-headline-md font-semibold text-primary">PsicoMelga</span>
+</div>
+<nav class="hidden md:flex gap-md items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-secondary-container/50 px-4 py-2 rounded-full transition-colors duration-300" href="#">Inicio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-secondary-container/50 px-4 py-2 rounded-full transition-colors duration-300" href="#">Terapias</a>
+<a class="font-label-md text-label-md text-primary font-bold px-4 py-2 rounded-full bg-secondary-container" href="#">Sobre nosotros</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-secondary-container/50 px-4 py-2 rounded-full transition-colors duration-300" href="#">Contacto</a>
+</nav>
+<button class="md:hidden text-primary p-2 transition-opacity duration-200 active:opacity-70" id="drawer-trigger">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</header>
+<!-- Navigation Drawer (Mobile) -->
+<div class="fixed inset-0 bg-primary/20 backdrop-blur-sm z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay"></div>
+<aside class="fixed inset-y-0 left-0 z-[60] flex flex-col py-lg bg-surface-container-low w-80 rounded-r-xl shadow-lg -translate-x-full transition-transform duration-300 ease-in-out" id="drawer">
+<div class="px-margin-mobile mb-lg flex flex-col gap-xs">
+<span class="font-display text-display text-primary">PsicoMelga</span>
+<div class="h-px bg-outline-variant/30 w-full"></div>
+</div>
+<nav class="flex flex-col gap-sm">
+<a class="flex items-center gap-md text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-label-md">Inicio</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="spa">spa</span>
+<span class="font-label-md text-label-md">Terapias</span>
+</a>
+<a class="flex items-center gap-md bg-secondary-container text-on-secondary-container rounded-full px-4 py-3 mx-2 scale-95 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="font-label-md text-label-md">Sobre nosotros</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="contact_support">contact_support</span>
+<span class="font-label-md text-label-md">Contacto</span>
+</a>
+</nav>
+</aside>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-margin-mobile md:px-margin-desktop py-xl overflow-hidden">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-lg items-center relative z-10">
+<div class="flex flex-col gap-md">
+<span class="inline-flex items-center gap-xs px-4 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-label-md font-label-md w-fit">
+                        Nuestra Historia
+                    </span>
+<h1 class="font-display text-headline-lg-mobile md:text-display text-primary leading-tight">
+                        Cuidando tu <span class="text-tertiary-container/60 italic font-medium">paz interior</span> con profesionalismo.
+                    </h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-lg">
+                        En PsicoMelga, creemos que el bienestar emocional es el pilar fundamental de una vida plena. Nuestra misión es ofrecerte un espacio de seguridad y claridad para tu crecimiento personal.
+                    </p>
+</div>
+<div class="relative group">
+<div class="absolute inset-0 bg-secondary-fixed rounded-[2rem] rotate-3 scale-105 opacity-20 group-hover:rotate-1 transition-transform duration-500"></div>
+<div class="relative h-[400px] md:h-[500px] rounded-[2rem] overflow-hidden tonal-elevation-1">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A serene landscape featuring a calm lake with soft sunlight filtering through green leaves of a tree in the foreground. The water reflects the tranquil sky, creating a mood of absolute peace and professional warmth. The aesthetic is bright, minimalist, and therapeutic, using soft blues and greens to evoke clarity and emotional relief." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8J5MTKaueBM2dxVM9y6BBAZxOwdNpXkkGKnRTN8HCuDB02k2CW7sOPfzZkJhTkaf9fFSuY-7iGGa3J6gol9f8Vlse4GE1sUjWf9gumJOf4DlS3V3GCQNbe-Nn1haz9jk6eynx_tU1BxKOREoSjBFjFMF_x74u_-BVbguTCtEe6GopR-_bIBZl3yJYN2uEGmgLrI2saQAPtRiPzULr5jNoVpSl5WyBmLBDohKMGuDM_Wyn7s_OUr6pKfEVxTifHWLUiptmKpkd3A"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Nuestra Filosofía (Bento Grid Style) -->
+<section class="bg-surface-container-low py-xl px-margin-mobile md:px-margin-desktop">
+<div class="max-w-[1200px] mx-auto">
+<div class="text-center mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Nuestra Filosofía</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Basamos cada sesión en valores que garantizan una experiencia terapéutica excepcional y humana.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Value 1: Empatía -->
+<div class="tonal-elevation-1 p-md rounded-[1.5rem] flex flex-col gap-sm border border-outline-variant/10 hover:border-primary/20 transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Empatía</h3>
+<p class="font-body-md text-body-md text-secondary">
+                            Escuchamos sin juicios, conectando con tu experiencia emocional desde una perspectiva de comprensión profunda y respeto mutuo.
+                        </p>
+</div>
+<!-- Value 2: Confidencialidad -->
+<div class="tonal-elevation-1 p-md rounded-[1.5rem] flex flex-col gap-sm border border-outline-variant/10 hover:border-primary/20 transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" data-icon="lock_open">lock</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Confidencialidad</h3>
+<p class="font-body-md text-body-md text-secondary">
+                            Tu privacidad es nuestra prioridad absoluta. Creamos un entorno seguro donde cada palabra queda protegida profesionalmente.
+                        </p>
+</div>
+<!-- Value 3: Profesionalismo -->
+<div class="tonal-elevation-1 p-md rounded-[1.5rem] flex flex-col gap-sm border border-outline-variant/10 hover:border-primary/20 transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="workspace_premium">verified</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Profesionalismo</h3>
+<p class="font-body-md text-body-md text-secondary">
+                            Utilizamos metodologías basadas en evidencia científica y formación continua para ofrecerte las mejores herramientas de sanación.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Nuestro Equipo Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-col lg:flex-row gap-xl items-center">
+<div class="w-full lg:w-1/2">
+<div class="relative">
+<div class="absolute -bottom-6 -right-6 w-full h-full bg-tertiary-fixed rounded-[2rem] -z-10"></div>
+<div class="rounded-[2rem] overflow-hidden aspect-[4/5] tonal-elevation-1">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of Dra. Elena Melga, a lead psychologist with a warm and welcoming expression. She is in a modern, brightly lit clinical office with soft blue accents and minimalist decor. Her attire is professional yet approachable. The lighting is soft and high-key, emphasizing a therapeutic and trustworthy atmosphere consistent with a digital sanctuary style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKQua8SVeHaKFsLujrsmlBdbNNEElWancx5_TK3_YVIS3YRV1lDdF9NJaYJafs4mLyG5e-vDKa29cylu-P4t7kdygXk9TU9kwcFimch1yJGchRoGnUbHCbn6gyBmM8oCs_kONZdJ-ramO3QdCzwL1V57WT0G6r8bmCcsNCZmwkw2lLiQPdeaYhxzDjZTAf2Y2D5uB2JFRdXyUl4X_f6h0KuDcbnLhCGiu8X9ZQznFtK-j7vhnQgz7oLRPwxd686lR1mg-elp4Spg"/>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 flex flex-col gap-md">
+<h2 class="font-headline-lg text-headline-lg text-primary">Nuestro Equipo</h2>
+<div class="flex flex-col gap-sm">
+<h3 class="font-headline-md text-headline-md text-primary">Dra. Elena Melga</h3>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Fundadora y Directora Clínica</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                            Con más de 15 años de experiencia clínica, la Dra. Melga ha dedicado su carrera a integrar la psicología humanista con las técnicas cognitivo-conductuales más avanzadas. Su enfoque se centra en dotar al paciente de herramientas prácticas para la vida diaria.
+                        </p>
+<div class="flex flex-wrap gap-sm">
+<span class="px-4 py-2 rounded-full bg-secondary-container text-on-secondary-container text-caption font-label-md">Terapia Cognitiva</span>
+<span class="px-4 py-2 rounded-full bg-secondary-container text-on-secondary-container text-caption font-label-md">Manejo del Estrés</span>
+<span class="px-4 py-2 rounded-full bg-secondary-container text-on-secondary-container text-caption font-label-md">Ansiedad y Depresión</span>
+</div>
+<div class="pt-sm border-t border-outline-variant/30 mt-sm">
+<p class="font-caption text-caption text-secondary">
+                                "La claridad mental no es la ausencia de problemas, sino la presencia de las herramientas para afrontarlos."
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop mb-xl">
+<div class="max-w-[1200px] mx-auto bg-primary-container rounded-[2.5rem] p-lg md:p-xl text-center relative overflow-hidden">
+<!-- Background Pattern -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 left-0 w-64 h-64 bg-tertiary rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-secondary rounded-full translate-x-1/3 translate-y-1/3 blur-3xl"></div>
+</div>
+<h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-on-primary-fixed mb-md relative z-10">¿Listo para comenzar tu proceso de cambio?</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-lg max-w-2xl mx-auto relative z-10">
+                    Agenda tu primera sesión de valoración hoy mismo. Estamos aquí para escucharte y acompañarte en cada paso.
+                </p>
+<div class="flex flex-col sm:flex-row gap-md justify-center relative z-10">
+<button class="px-xl py-4 bg-primary text-on-primary rounded-full font-label-md text-label-md transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                        Agendar Cita
+                    </button>
+<button class="px-xl py-4 bg-surface-container-lowest text-primary rounded-full font-label-md text-label-md transition-all duration-300 hover:bg-secondary-container hover:scale-105 active:scale-95">
+                        Contáctanos
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-xl px-margin-mobile flex flex-col items-center gap-md text-center bg-surface-container-highest">
+<div class="flex items-center gap-base mb-sm">
+<span class="material-symbols-outlined text-primary text-headline-md" data-icon="psychology">psychology</span>
+<span class="font-headline-md text-headline-md text-primary font-semibold">PsicoMelga</span>
+</div>
+<div class="flex gap-lg mb-md">
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Facebook</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">LinkedIn</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface max-w-sm">
+            © 2024 PsicoMelga. Cognitive Clarity Design.
+        </p>
+<div class="mt-md pt-md border-t border-outline-variant/30 w-full max-w-lg flex justify-center gap-sm text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+<span class="font-caption text-caption">Centro Sanitario Autorizado</span>
+</div>
+</footer>
+<script>
+        const drawerTrigger = document.getElementById('drawer-trigger');
+        const drawer = document.getElementById('drawer');
+        const overlay = document.getElementById('drawer-overlay');
+
+        function openDrawer() {
+            drawer.classList.remove('-translate-x-full');
+            overlay.classList.remove('hidden');
+            setTimeout(() => overlay.classList.add('opacity-100'), 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            drawer.classList.add('-translate-x-full');
+            overlay.classList.remove('opacity-100');
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        drawerTrigger.addEventListener('click', openDrawer);
+        overlay.addEventListener('click', closeDrawer);
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scroll
