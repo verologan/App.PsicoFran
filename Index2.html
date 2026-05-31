@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PsicoMelga | Bienestar Emocional</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#191c1e",
+                    "on-tertiary-fixed": "#131e17",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#4e6073",
+                    "surface-dim": "#d8dadc",
+                    "on-primary-fixed-variant": "#36485b",
+                    "surface-container-low": "#f2f4f6",
+                    "primary": "#162839",
+                    "outline-variant": "#c4c6cd",
+                    "secondary-container": "#d3e2ed",
+                    "primary-container": "#2c3e50",
+                    "secondary-fixed-dim": "#bac9d3",
+                    "primary-fixed": "#d1e4fb",
+                    "error": "#ba1a1a",
+                    "secondary": "#526069",
+                    "on-primary-fixed": "#091d2e",
+                    "background": "#f7f9fb",
+                    "inverse-surface": "#2d3133",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-secondary-fixed-variant": "#3b4951",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed": "#0f1d25",
+                    "on-primary-container": "#96a9be",
+                    "tertiary-fixed-dim": "#bdcabe",
+                    "surface": "#f7f9fb",
+                    "on-surface-variant": "#43474c",
+                    "outline": "#74777d",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#f7f9fb",
+                    "inverse-on-surface": "#eff1f3",
+                    "tertiary-container": "#343f37",
+                    "on-surface": "#191c1e",
+                    "inverse-primary": "#b5c8df",
+                    "surface-container": "#eceef0",
+                    "primary-fixed-dim": "#b5c8df",
+                    "surface-variant": "#e0e3e5",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#d6e5ef",
+                    "on-tertiary-container": "#9eaaa0",
+                    "tertiary": "#1e2922",
+                    "surface-container-high": "#e6e8ea",
+                    "on-tertiary-fixed-variant": "#3e4a41",
+                    "tertiary-fixed": "#d9e6da",
+                    "on-secondary-container": "#56656e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "80px",
+                    "md": "24px",
+                    "margin-desktop": "120px",
+                    "lg": "48px",
+                    "gutter": "24px",
+                    "base": "8px",
+                    "margin-mobile": "20px",
+                    "xs": "4px",
+                    "sm": "12px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Montserrat"],
+                    "display": ["Montserrat"],
+                    "caption": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(247, 249, 251, 0.9) 30%, rgba(247, 249, 251, 0) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-16 bg-surface/80 backdrop-blur-md">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary text-headline-md" data-icon="psychology">psychology</span>
+<span class="font-headline-md text-headline-md font-semibold text-primary">PsicoMelga</span>
+</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="font-label-md text-label-md text-primary font-bold hover:bg-secondary-container/50 transition-colors duration-300 px-3 py-2 rounded-lg" href="#">Inicio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-secondary-container/50 transition-colors duration-300 px-3 py-2 rounded-lg" href="#terapias">Terapias</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-secondary-container/50 transition-colors duration-300 px-3 py-2 rounded-lg" href="#">Sobre nosotros</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-secondary-container/50 transition-colors duration-300 px-3 py-2 rounded-lg" href="#contacto">Contacto</a>
+</nav>
+<div class="flex items-center gap-sm">
+<button class="material-symbols-outlined p-2 text-primary hover:bg-secondary-container/50 rounded-full transition-colors" data-icon="menu">menu</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[90vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="PsicoMelga Serenity" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uiuBig-QXZeXKhgT38bnLnfbMa9oVR13zM68kEdo6fNvizmVszGa038YMkcDkkiGbuHtzumKRV2wAScTjVv_a0MaF3WF-n5jp4Gqou4Okuv-TQuMeIrFKQrgmHg7jHG_z0UUvaq3gpXBRTmx6LR-FbEVpq_riArfisaGjSDiCv5josid_7IJQH_OK2DaBo3z5abQLWpvIZ8vOJaHMBSMPzANBaozWucbEoc0NlMMWyBwUgs_UI5I8Eo3w"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="container mx-auto px-margin-desktop relative z-10">
+<div class="max-w-[600px] flex flex-col gap-md animate-fade-in-up">
+<h1 class="font-display text-display text-primary">PsicoMelga</h1>
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+                        Tu espacio de bienestar emocional y crecimiento personal. Redescubre tu equilibrio interior en un entorno de paz y profesionalidad.
+                    </p>
+<div class="mt-base">
+<a class="inline-flex items-center justify-center px-lg py-4 bg-primary text-on-primary rounded-full font-label-md text-label-md shadow-lg hover:bg-primary-container transition-all duration-300 transform hover:-translate-y-1" href="#contacto">
+                            Reserva tu cita
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Nuestras Terapias Section -->
+<section class="py-xl bg-surface-container-lowest" id="terapias">
+<div class="container mx-auto px-margin-desktop">
+<div class="text-center mb-xl">
+<span class="font-label-md text-label-md text-primary-container bg-secondary-container px-4 py-1 rounded-full uppercase tracking-widest">Servicios</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-base">Nuestras Terapias</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+<!-- Card 1 -->
+<div class="bg-white p-md rounded-[1.5rem] border border-outline-variant/30 hover:shadow-xl transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="cognition">cognition</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Terapia cognitivo-conductual</h3>
+<p class="font-body-md text-body-md text-secondary">Enfoque práctico para identificar y cambiar patrones de pensamiento negativos que afectan tu comportamiento.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-md rounded-[1.5rem] border border-outline-variant/30 hover:shadow-xl transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="favorite">favorite</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Terapia de pareja</h3>
+<p class="font-body-md text-body-md text-secondary">Espacio seguro para mejorar la comunicación, resolver conflictos y fortalecer el vínculo emocional.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-md rounded-[1.5rem] border border-outline-variant/30 hover:shadow-xl transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="child_care">child_care</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Terapia infantil</h3>
+<p class="font-body-md text-body-md text-secondary">Apoyo especializado para el desarrollo emocional y psicológico de los más pequeños a través del juego.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white p-md rounded-[1.5rem] border border-outline-variant/30 hover:shadow-xl transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="air">air</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Ansiedad y estrés</h3>
+<p class="font-body-md text-body-md text-secondary">Herramientas y técnicas para gestionar la presión diaria y recuperar la calma en tu vida cotidiana.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-white p-md rounded-[1.5rem] border border-outline-variant/30 hover:shadow-xl transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="trending_up">trending_up</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Autoestima y desarrollo</h3>
+<p class="font-body-md text-body-md text-secondary">Potencia tu crecimiento personal y construye una relación saludable y positiva contigo mismo.</p>
+</div>
+<!-- Card 6 -->
+<div class="bg-white p-md rounded-[1.5rem] border border-outline-variant/30 hover:shadow-xl transition-all duration-300 group">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="videocam">videocam</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-sm">Terapia online</h3>
+<p class="font-body-md text-body-md text-secondary">Atención psicológica de calidad desde la comodidad de tu hogar, sin barreras geográficas.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-xl bg-background" id="contacto">
+<div class="container mx-auto px-margin-desktop">
+<div class="flex flex-col lg:flex-row items-center gap-xl">
+<div class="lg:w-1/2 flex flex-col gap-md">
+<h2 class="font-headline-lg text-headline-lg text-primary">Nuestra Ubicación</h2>
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="location_on">location_on</span>
+<div>
+<p class="font-body-lg text-body-lg text-on-surface">Carrer Foia de Castalla</p>
+<p class="font-body-md text-body-md text-secondary">La Nucia (Alicante), España</p>
+</div>
+</div>
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="schedule">schedule</span>
+<div>
+<p class="font-body-md text-body-md text-on-surface">Lunes a Viernes: 09:00 - 20:00</p>
+<p class="font-body-md text-body-md text-secondary">Cita previa requerida</p>
+</div>
+</div>
+<div class="mt-md">
+<a class="inline-flex items-center gap-xs font-label-md text-label-md text-primary hover:underline group" href="#">
+                                Abrir en Google Maps
+                                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:w-1/2 w-full h-[450px] rounded-[2rem] overflow-hidden shadow-lg border-8 border-white">
+<div class="w-full h-full bg-surface-container-high relative">
+<!-- Placeholder Map UI -->
+<img class="w-full h-full object-cover grayscale-[20%] opacity-80" data-alt="A clean, minimalist digital map rendering of a coastal Spanish town. The map features a soft pastel color scheme with light blues for water and off-white for streets, maintaining a serene and professional aesthetic. A single, elegant Navy Blue location pin marks a specific destination in La Nucia, Alicante, under bright, clear daylight." data-location="La Nucia, Alicante" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyNb2yi21X41iLP698-ufUABkcM2NOQhRFackCGOBx4vo6XjPAAOm-TtqIXaG1FGMFMoiIPEiQe8GypDyeimEEp0Kz643ff96U2vwDHiK61jMv2XSdgc2tkngQF5x2wYXcWPeGxYT6M_kaCptt-Jnz4Q1cYT33nAQclsNlcZ7QIPe3DKZkd5bwUOBId-Hm6HdPjGvTbadgN5Q5-n2tQCLnwBHrmwaa6uXk6n8WM5myT74ejXo195YTcw-Lb2AO6xP_jUo8n5fDiQ"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary text-on-primary p-4 rounded-full shadow-2xl animate-bounce">
+<span class="material-symbols-outlined text-display" data-icon="location_on">location_on</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-xl px-margin-desktop flex flex-col items-center gap-md text-center bg-surface-container-highest">
+<div class="flex flex-col items-center gap-xs">
+<span class="material-symbols-outlined text-primary text-display" data-icon="psychology">psychology</span>
+<span class="font-headline-md text-headline-md text-primary">PsicoMelga</span>
+</div>
+<p class="font-body-md text-body-md text-secondary max-w-md">
+            Comprometidos con tu salud mental a través de un enfoque humano, profesional y basado en la evidencia.
+        </p>
+<nav class="flex gap-lg mt-md">
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Facebook</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">LinkedIn</a>
+</nav>
+<div class="w-full border-t border-outline-variant/20 mt-lg pt-lg flex flex-col md:flex-row justify-between items-center gap-md">
+<p class="font-label-md text-label-md text-on-secondary-container">© 2024 PsicoMelga. Cognitive Clarity Design.</p>
+<div class="flex gap-md">
+<a class="font-label-md text-label-md text-on-secondary-container hover:text-primary transition-colors" href="#">Privacidad</a>
+<a class="font-label-md text-label-md text-on-secondary-container hover:text-primary transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple scroll observer for header transparency
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-sm');
+                header.classList.replace('bg-surface/80', 'bg-surface/95');
+            } else {
+                header.classList.remove('shadow-sm');
+                header.classList.replace('bg-surface/95', 'bg-surface/80');
+            }
+        });
+    </script>
+</body></html>
