@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contacto | PsicoMelga</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#131e17",
+                    "on-primary-container": "#96a9be",
+                    "on-background": "#191c1e",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#d8dadc",
+                    "primary-fixed": "#d1e4fb",
+                    "surface-bright": "#f7f9fb",
+                    "on-surface-variant": "#43474c",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e6e8ea",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#d9e6da",
+                    "on-tertiary-fixed-variant": "#3e4a41",
+                    "on-surface": "#191c1e",
+                    "surface-variant": "#e0e3e5",
+                    "outline-variant": "#c4c6cd",
+                    "tertiary-container": "#343f37",
+                    "surface-container-highest": "#e0e3e5",
+                    "secondary-container": "#d3e2ed",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#1e2922",
+                    "primary": "#162839",
+                    "inverse-surface": "#2d3133",
+                    "inverse-primary": "#b5c8df",
+                    "inverse-on-surface": "#eff1f3",
+                    "background": "#f7f9fb",
+                    "on-secondary-container": "#56656e",
+                    "on-secondary": "#ffffff",
+                    "surface": "#f7f9fb",
+                    "on-secondary-fixed": "#0f1d25",
+                    "tertiary-fixed-dim": "#bdcabe",
+                    "surface-container-low": "#f2f4f6",
+                    "on-primary-fixed": "#091d2e",
+                    "primary-fixed-dim": "#b5c8df",
+                    "outline": "#74777d",
+                    "secondary-fixed": "#d6e5ef",
+                    "on-secondary-fixed-variant": "#3b4951",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#9eaaa0",
+                    "secondary-fixed-dim": "#bac9d3",
+                    "on-error": "#ffffff",
+                    "primary-container": "#2c3e50",
+                    "on-primary-fixed-variant": "#36485b",
+                    "error": "#ba1a1a",
+                    "surface-container": "#eceef0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "80px",
+                    "md": "24px",
+                    "sm": "12px",
+                    "lg": "48px",
+                    "gutter": "24px",
+                    "xs": "4px",
+                    "base": "8px",
+                    "margin-desktop": "120px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "caption": ["Inter"],
+                    "display": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Montserrat"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "display": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ambient-shadow {
+            box-shadow: 0px 4px 20px rgba(22, 40, 57, 0.04);
+        }
+        .focus-ring:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #d1e4fb, 0 0 0 4px #162839;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface/80 backdrop-blur-md">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="psychology">psychology</span>
+<span class="font-headline-md text-headline-md font-semibold text-primary">PsicoMelga</span>
+</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-secondary-container/50 transition-colors duration-300 px-4 py-2 rounded-full" href="#">Inicio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-secondary-container/50 transition-colors duration-300 px-4 py-2 rounded-full" href="#">Terapias</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-secondary-container/50 transition-colors duration-300 px-4 py-2 rounded-full" href="#">Sobre nosotros</a>
+<a class="font-label-md text-label-md text-primary font-bold px-4 py-2 rounded-full bg-secondary-container" href="#">Contacto</a>
+</nav>
+<button class="md:hidden p-2 text-primary" onclick="toggleDrawer()">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</header>
+<!-- NavigationDrawer (Mobile) -->
+<div class="fixed inset-y-0 left-0 z-[60] flex flex-col py-lg bg-surface-container-low w-80 -translate-x-full transition-transform duration-300 shadow-lg md:hidden" id="drawer">
+<div class="px-margin-mobile mb-lg flex justify-between items-center">
+<span class="font-display text-display text-primary text-2xl">PsicoMelga</span>
+<button class="text-primary" onclick="toggleDrawer()">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-xs">
+<a class="text-on-surface-variant px-4 py-3 mx-2 flex items-center gap-md rounded-full hover:bg-surface-container-high" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md">Inicio</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 mx-2 flex items-center gap-md rounded-full hover:bg-surface-container-high" href="#">
+<span class="material-symbols-outlined" data-icon="spa">spa</span>
+<span class="font-label-md">Terapias</span>
+</a>
+<a class="text-on-surface-variant px-4 py-3 mx-2 flex items-center gap-md rounded-full hover:bg-surface-container-high" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="font-label-md">Sobre nosotros</span>
+</a>
+<a class="bg-secondary-container text-on-secondary-container px-4 py-3 mx-2 flex items-center gap-md rounded-full font-bold" href="#">
+<span class="material-symbols-outlined" data-icon="contact_support">contact_support</span>
+<span class="font-label-md">Contacto</span>
+</a>
+</nav>
+</div>
+<div class="fixed inset-0 bg-black/20 z-[55] hidden backdrop-blur-sm" id="drawer-overlay" onclick="toggleDrawer()"></div>
+<main class="pt-32 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
+<!-- Intro Section -->
+<section class="max-w-2xl mb-xl text-center md:text-left">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-md">Estamos aquí para acompañarte</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Inicia tu camino hacia el bienestar emocional. Nuestro equipo está listo para escucharte y ofrecerte un espacio de seguridad y crecimiento personal.</p>
+</section>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Contact Form Card -->
+<div class="lg:col-span-7 bg-white p-md md:p-lg rounded-xl ambient-shadow border border-surface-variant/30">
+<form class="flex flex-col gap-md" onsubmit="event.preventDefault(); alert('Mensaje enviado. Nos pondremos en contacto pronto.');">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="name">Nombre completo</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl px-4 py-3 focus:border-primary focus:ring-0 transition-all font-body-md" id="name" placeholder="Tu nombre" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="email">Correo electrónico</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl px-4 py-3 focus:border-primary focus:ring-0 transition-all font-body-md" id="email" placeholder="tu@email.com" required="" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="phone">Teléfono</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl px-4 py-3 focus:border-primary focus:ring-0 transition-all font-body-md" id="phone" placeholder="+34 000 000 000" type="tel"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="message">Tu mensaje</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl px-4 py-3 focus:border-primary focus:ring-0 transition-all font-body-md resize-none" id="message" placeholder="¿En qué podemos ayudarte?" required="" rows="5"></textarea>
+</div>
+<button class="mt-sm bg-primary-container text-white py-4 px-8 rounded-xl font-label-md text-label-md hover:brightness-110 active:scale-95 transition-all duration-300 w-full md:w-fit self-start" type="submit">
+                        Enviar mensaje
+                    </button>
+</form>
+</div>
+<!-- Sidebar Info -->
+<div class="lg:col-span-5 flex flex-col gap-gutter">
+<!-- Direct Info Card -->
+<div class="bg-secondary-container/30 p-md md:p-lg rounded-xl border border-secondary-container">
+<h2 class="font-headline-md text-headline-md text-primary mb-md">Contacto directo</h2>
+<ul class="flex flex-col gap-md">
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary p-2 bg-white rounded-lg" data-icon="call">call</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">Teléfono</p>
+<p class="font-body-md text-primary">+34 600 000 000</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary p-2 bg-white rounded-lg" data-icon="mail">mail</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">Email</p>
+<p class="font-body-md text-primary">hola@psicomelga.com</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary p-2 bg-white rounded-lg" data-icon="location_on">location_on</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">Dirección</p>
+<p class="font-body-md text-primary">Carrer Foia de Castalla, La Nucia, Alicante</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Location Map Preview -->
+<div class="relative overflow-hidden rounded-xl h-64 bg-surface-container-high ambient-shadow group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A clean, minimalist 3D isometric map illustration of a peaceful Mediterranean coastal town with soft blue streets and pastel green park areas. The map is presented in a modern, flat vector style that emphasizes clarity and tranquility, matching a professional healthcare aesthetic. Soft sunlight filters over the digital landscape, creating a sense of calm and accessibility." data-location="La Nucia, Alicante" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWTL7g2R2gfGPn4PW2zwDjrQS1syPiX1ix-Vjwv8LF6D3YRK6eSCdXjtlSsgIwkmVByMUFFsSrxo0o9dLVzsLGIIHr47vt4It7cSpaa8cBGPh-JJHirO9ODaUxZxSMuW92oW_JsM99Ii0ue3uzyfkHfISjcTkLkiY33x1L5GAS3e1czBUHXv57uxDbIw_y5kqi-XB8mBVpGE-SJ8mCgP29AexcXjII3vKG8wZgvVVwH-vSp_nzts9ziNhYm-HqLb9IvUOBwlxf9Q"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px] flex items-center justify-center pointer-events-none">
+<div class="bg-white px-4 py-2 rounded-full shadow-lg flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" data-icon="pin_drop" style="font-variation-settings: 'FILL' 1;">pin_drop</span>
+<span class="font-label-md text-primary">Ver ubicación</span>
+</div>
+</div>
+</div>
+<!-- Social Media -->
+<div class="flex flex-col gap-sm">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest px-1">Encuéntranos en</p>
+<div class="flex gap-sm">
+<a class="flex-1 bg-white border border-outline-variant p-4 rounded-xl flex items-center justify-center hover:bg-secondary-container transition-colors duration-300" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="share">share</span>
+<span class="ml-2 font-label-md text-primary">Instagram</span>
+</a>
+<a class="flex-1 bg-white border border-outline-variant p-4 rounded-xl flex items-center justify-center hover:bg-secondary-container transition-colors duration-300" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="public">public</span>
+<span class="ml-2 font-label-md text-primary">Facebook</span>
+</a>
+<a class="flex-1 bg-white border border-outline-variant p-4 rounded-xl flex items-center justify-center hover:bg-secondary-container transition-colors duration-300" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="movie">movie</span>
+<span class="ml-2 font-label-md text-primary">TikTok</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-xl px-margin-mobile flex flex-col items-center gap-md text-center bg-surface-container-highest dark:bg-primary-container">
+<div class="flex items-center gap-sm mb-sm">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed text-3xl" data-icon="psychology">psychology</span>
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed font-bold">PsicoMelga</span>
+</div>
+<div class="flex gap-lg mb-md">
+<a class="font-label-md text-label-md text-secondary dark:text-on-secondary-container hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="font-label-md text-label-md text-secondary dark:text-on-secondary-container hover:text-primary transition-colors" href="#">Facebook</a>
+<a class="font-label-md text-label-md text-secondary dark:text-on-secondary-container hover:text-primary transition-colors" href="#">TikTok</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface dark:text-on-primary-container opacity-80">© 2024 PsicoMelga. Cognitive Clarity Design.</p>
+</footer>
+<script>
+        function toggleDrawer() {
+            const drawer = document.getElementById('drawer');
+            const overlay = document.getElementById('drawer-overlay');
+            const isOpen = drawer.classList.contains('translate-x-0');
+            
+            if (isOpen) {
+                drawer.classList.remove('translate-x-0');
+                drawer.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            } else {
+                drawer.classList.add('translate-x-0');
+                drawer.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        // Atmosphere Effect: Subtle parallax on inputs
+        document.querySelectorAll('input, textarea').forEach(el => {
+            el.addEventListener('focus', () => {
+                el.parentElement.classList.add('scale-[1.01]');
+                el.parentElement.style.transition = 'transform 0.3s ease';
+            });
+            el.addEventListener('blur', () => {
+                el.parentElement.classList.remove('scale-[1.01]');
+            });
+        });
+    </script>
+</body></html>
